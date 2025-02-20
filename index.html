@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sneaker Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DIY Custom Sneaker Builder</h1>
+    </header>
+
+    <main>
+        <div class="customizer-container">
+            <!-- Sneaker Display Area -->
+            <div class="sneaker-preview">
+                <img id="sneakerBase" src="sneaker-base.png" alt="Custom Sneaker">
+                <div id="customDesign"></div>
+            </div>
+
+            <!-- Customization Options -->
+            <div class="options">
+                <h2>Customize Your Sneaker</h2>
+
+                <label for="colorPicker">Choose Color:</label>
+                <input type="color" id="colorPicker">
+
+                <label for="uploadImage">Upload Design (Logo/Pattern):</label>
+                <input type="file" id="uploadImage" accept="image/*">
+
+                <label for="addText">Add Text:</label>
+                <input type="text" id="addText" placeholder="Enter text for your sneaker">
+
+                <label for="fontSize">Font Size:</label>
+                <input type="range" id="fontSize" min="10" max="50" value="20">
+
+                <label for="fontColor">Font Color:</label>
+                <input type="color" id="fontColor">
+
+                <button id="resetBtn">Reset</button>
+                <button id="saveBtn">Save Design</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
